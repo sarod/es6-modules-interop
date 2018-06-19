@@ -1,0 +1,9 @@
+{
+    "#Comment": "This is used by babel",
+    "compilerOptions": {
+        "outDir": "dist/thisshouldbeIgnored"
+    },
+    "includes": [
+        "src/**/*.ts"
+    ]
+}

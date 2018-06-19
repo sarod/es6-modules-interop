@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "outDir": "dist/tsc-esnext-esModuleInterop",
+        "esModuleInterop": true
+    },
+    "includes": [
+        "src/**/*.ts"
+    ]
+}

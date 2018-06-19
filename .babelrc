@@ -1,0 +1,35 @@
+{
+
+  "env": {
+    "modules-false": {
+      "presets": [
+        ["@babel/env", {
+          "modules": false
+        }]
+      ],
+      "plugins": [
+        "@babel/plugin-transform-typescript"
+      ]
+    },
+    "modules-commonjs": {
+      "presets": [
+        ["@babel/env", {
+          "modules": "commonjs"
+        }]
+      ],
+      "plugins": [
+        "@babel/plugin-transform-typescript"
+      ]
+    },
+    "modules-amd": {
+      "presets": [
+        ["@babel/env", {
+          "modules": "amd"
+        }]
+      ],
+      "plugins": [
+        "@babel/plugin-transform-typescript"
+      ]
+    },
+  }
+}

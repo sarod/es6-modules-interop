@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "outDir": "dist/tsc-commonjs-esModuleInterop",
+        "esModuleInterop": true
+    },
+    "includes": [
+        "src/**/*.ts"
+    ]
+}

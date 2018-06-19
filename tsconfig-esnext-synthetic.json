@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "outDir": "dist/tsc-esnext-synthetic",
+        "allowSyntheticDefaultImports": true
+    },
+    "includes": [
+        "src/**/*.ts"
+    ]
+}

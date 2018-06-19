@@ -1,0 +1,28 @@
+{
+  "name": "js-modules-interop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sebastien Arod <sebastien.arod@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-transform-typescript": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "babel-loader": "^8.0.0-beta.3",
+    "typescript": "^2.9.2",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "moment": "^2.22.2"
+  },
+  "scripts": {
+    "tsc-all": "tsc -p tsconfig-commonjs.json; tsc -p tsconfig-commonjs-esModuleInterop.json; tsc -p tsconfig-esnext.json; tsc -p tsconfig-esnext-synthetic.json; tsc -p tsconfig-esnext-esModuleInterop.json;",
+    "babel-modules-false": "BABEL_ENV=modules-false babel src --out-dir dist/babel-modules-false --extensions='.ts,.tsx'",
+    "babel-modules-commonjs": "BABEL_ENV=modules-commonjs babel src --out-dir dist/babel-modules-commonjs --extensions='.ts,.tsx'",
+    "babel-modules-amd": "BABEL_ENV=modules-amd babel src --out-dir dist/babel-modules-amd --extensions='.ts,.tsx'",
+    "babel-all": "yarn babel-modules-false; yarn babel-modules-commonjs; yarn babel-modules-amd",
+    "webpack": "webpack --config webpack.config.js"
+  }
+}
